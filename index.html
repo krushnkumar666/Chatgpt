@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatGPT</title>
+    <script
+      src="https://kit.fontawesome.com/9ddf44991d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- chat contaier -->
+
+    <div class="App">
+      <div class="sideBar" id="sidebar">
+        <div class="upperSide">
+          <div class="upperSideTop">
+            <img src="chat-logo.png" alt="" class="logo" />
+            <span class="brand">ChatGPT</span>
+          </div>
+          <button class="midBtn" id="newchat-btn">
+            <img src="add-icon.png" alt="" class="addBtn" />New Chat
+          </button>
+          <div class="upperSideScroll">
+            <div class="upperSideBottom">
+              <!-- <button class="query">
+                <img src="msgicon.png" alt="" class="queryimg" />
+                who is krushnkumar bawalge ?
+              </button> -->
+            </div>
+          </div>
+        </div>
+        <div class="lowerSide">
+          <div class="listItems">
+            <img src="home.png" alt="" class="listitemsImg" />Home
+          </div>
+          <div class="listItems">
+            <img src="bookmarks.png" alt="" class="listitemsImg" />Saved
+          </div>
+          <div class="listItems">
+            <img src="upgrade.png" alt="" class="listitemsImg" />upgrade to Pro
+          </div>
+        </div>
+      </div>
+      
+      <div class="main chat-container"></div>
+      <!-- Typing container -->
+      <div class="typing-container">
+        <div class="typing-content">
+          <div class="typing-textarea">
+            <textarea
+              id="chat-input"
+              placeholder="Enter your query ... "
+              required
+            ></textarea>
+            <span id="send-btn" class="material-symbols-rounded"
+              ><i class="fa-solid fa-right-to-bracket"></i
+            ></span>
+          </div>
+          <div class="typing-controls">
+            <span id="theme-btn" class="material-symbols-rounded"
+              ><i class="fa-regular fa-sun"></i
+            ></span>
+            <span id="delete-btn" class="material-symbols-rounded"
+              ><i class="fa-solid fa-trash"></i
+            ></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
